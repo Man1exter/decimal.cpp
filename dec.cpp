@@ -43,5 +43,23 @@ int main(){
     auto d6 = d5 * d2 * d3 + d4 / d1;
     cout << "najnowsze d6 zlaczone z reszty =======> " << d6 << endl;
 
+    cout << endl;
+    cout << endl;
+    cout << endl;
+
+    decimal<2> value(143125);
+
+    value = value / decimal_cast<2>(333.0);
+
+    cout << "REZULTAT: " << value << endl;
+
+    decimal<6> Rate(12.1234);
+
+    value = decimal_cast<2>(decimal_cast<6>(value) * Rate);
+
+    cout << "2 REZULTAT : " << value << endl;
+
+    cout << "REZULTAT 2<6> : " << decimal_cast<6>(value) << endl;
+
     return 0;
 }
