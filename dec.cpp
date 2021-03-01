@@ -22,5 +22,26 @@ int main(){
     decimal<10> d4(51.222475534535);
     cout << "d4 = " << d4 << endl;
 
+    // od lewej podawana ktora ma byc nowa wartosc z biblioteki..
+
+    d1 *= d4;
+    cout << "nowe d1 = " << d1 << endl;
+
+    d2 /= d4;
+    cout << "nowe d2 = " << d2 << endl;
+
+    // albo poprzez jakas wartosc z prawej strony..
+
+    d3 *= 150;
+    cout << "nowe d3 = " << d3 << endl;
+
+    // mozna laczyc ze soba w jedna wartosc..
+
+    auto d5 = d1 * d2 * d3 + d4;
+    cout << "najnowsze d5 zlaczone z reszty =======> " << d5 << endl;
+
+    auto d6 = d5 * d2 * d3 + d4 / d1;
+    cout << "najnowsze d6 zlaczone z reszty =======> " << d6 << endl;
+
     return 0;
 }
